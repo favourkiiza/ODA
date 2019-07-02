@@ -9,6 +9,9 @@ body{
     padding: 0;
     margin: 0;
 }
+nav{
+    
+}
 .navbar-brand{
     font-family: 'Great Vibes';
     font-size: 35px;
@@ -22,14 +25,14 @@ body{
 .navbar li { 
     display: table-cell; 
     position: relative; 
-    padding: 15px 0;
+    
     font-weight: 500px;
   }
   .navbar li a {
     color: #fff;
     text-transform: uppercase;
     display: inline-block;
-    padding: 15px 15px;
+    
     position: relative;
     font-weight: 500px;
   }
