@@ -1,0 +1,242 @@
+
+
+.presentation {
+	display: flex;
+	width: 90%;
+	margin: auto;
+	min-height: 80vh;
+	align-items: center;
+}
+.introduction {
+	flex: 1;
+}
+@media (mini-width: 991px) {
+    .introduction {
+        margin-left: 20%;
+    }
+}
+.intro-text h1 {
+	font-size: 44px;
+	font-weight: 500;
+	background: linear-gradient(to right, #494964, #6f6f89);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.intro-text p {
+	margin-top: 5px;
+	font-size: 22px;
+	color: #585772;
+}
+	
+.cover {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	height: 60vh;
+}
+.cover img {
+	height: 100%;
+	filter: drop-shadow(0px 5px 3px black);
+	animation: drop 1.5s ease;
+}
+
+.big-circle {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: -1;
+	opacity: 0.5;
+	height: 80%;
+}
+.medium-circle {
+	position: absolute;
+	top: 30%;
+	right: 30%;
+	z-index: -1;
+	height: 60%;
+	opacity: 0.4;
+}
+.small-circle {
+	position: absolute;
+	bottom: 0%;
+	left: 20%;
+	z-index: -1;
+}
+
+.laptop-select {
+	width: 15%;
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	right: 20%;
+}
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.cover img {
+		height: 80%;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+.hd {
+	position: relative;
+	height: 300px;
+	background-image: linear-gradient(#a1c7a1, #b9e0ad);
+  }
+  
+  .hd h1 {
+	padding: 100px 0;
+	font: 44px "Arial";
+	text-align: center;
+	color: #eddb00;
+  }
+  
+  .hd h1 {
+	color: white;
+  }
+  
+  svg {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+  }
+  @media (max-width: 767px) {
+    .column-1,
+    .column-2 {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .column-1 {
+        width: 50%;
+    }
+    .column-2 {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    .column-2,
+    .column-1 {
+		width: 33%;
+		
+	}
+	.section11 .row{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	.section-2 .row{
+        width: 100%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.container .row .col-4{
+		width: 100%;
+	}
+}
+/**/
+@media (min-width: 768px) and (max-width: 991px) {
+    .flex-container {
+        width: 100%;
+    }
+    .img-div {
+        width: 100%;
+    }
+}
+
+/* Just for the absolutes within */
+.lskew {
+	position: relative;
+}
+
+/* Set an image as the right side, make it stand out by doing it smaller (5% top and bottom) */
+.lskew .skew-image {
+	position: absolute;
+	width: 50%;
+	right: 0;
+	top: 5%;
+	bottom: 5%;
+
+	background-image: url('../images/basic-jpeg.jpg');
+	background-size: cover;
+	background-position: right 33%; /* adjust for another picture */
+}
+
+/* Just for the absolute inside */
+.lskew .skew-wrapper {
+	position: relative;    
+}
+  
+/* OPTION */
+.lskew .skew-wrapper.min200 { min-height: 200px; }
+.lskew .skew-wrapper.min300 { min-height: 300px; }
+.lskew .skew-wrapper.min400 { min-height: 400px; }
+  
+/* The text background, skewed and adjusted to fit nicely */
+.lskew .skew-content-bg {
+	position: absolute;
+	height: 100%;
+	top: 0%;
+	left: -30px;
+	right: -20px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+	box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
+
+	background-color: #079247;
+	background-size: cover;
+	background-position: center left;
+	transform: skew(-6deg, 0deg);
+}
+/* Text content settings */
+.lskew .skew-content {
+	position: relative;
+	font-size: 1.4rem;
+	color: #fff;
+	padding: 30px 20px;
+}
+@media (max-width: 768px) {
+	.lskew .skew-image {
+	 width: 100%;
+	}
+   }
+

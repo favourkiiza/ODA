@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Concert+One|Exo+2|Great+Vibes|Kaushan+Script|Nanum+Myeongjo|Nunito+Sans|Open+Sans|Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Dosis|Rubik|Volkhov&display=swap');
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.navbar-brand{
+    font-family: 'Great Vibes';
+    font-size: 35px;
+    color: brown !important;
+}
+/*nav links*/
+.navbar{
+    background: #000;
+}
+
+.navbar li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+    font-weight: 500px;
+  }
+  .navbar li a {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 15px 15px;
+    position: relative;
+    font-weight: 500px;
+  }
+  .navbar li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #32cd32;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navbar li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+.active .nav-link{
+    color: #eddb00 !important;
+}
+
+.menu-right-btn{
+    padding: 13px 46px;
+    margin-right: 4%;
+    border: 2px solid #eddb00;
+    background-color: transparent;
+    transition: all 300ms ease-in;
+    border-radius: 50px;
+    font-family: 'Concert One';
+    color: #FFF;
+    text-transform: uppercase;
+    
+}
+.menu-right-btn:hover{
+    color: #fff;
+    background-color: #eddb00;
+}
+.site-content{
+    background-image: url('../images/girlphone.jpg');
+    background-size: cover;
+    height: 800px;
+}
+.site-title, .site-desc{
+    color: #fff;
+    font-family: '';
+    text-shadow: 1px 1px 15px #000;
+}
+.site-title{
+    margin-top: 10%;
+    font-size: 60px;
+    margin-left: 20%;
+    margin-right: 30%;
+}
+.site-btn1{
+    margin-left: 50%;
+    background-color:#fcb216;
+    color: #079247;
+    border-radius: 50px;
+    border: 4px solid #fcb216;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding-left: 50px;
+}
+.site-btn2{
+    background-color: #fff;
+}
+.site-btn1, .site-btn2{
+    margin-top: 5%;
+    margin-bottom: 40%;
+}
+/*section-1*/
+.section-1 .heading-1{
+    margin-top: 8%;
+}
+.section-1 .heading-2{
+    margin-bottom: 5%;
+    font-size: 39px;
+}
+.section-1 .para-1{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 5%;
+}
+
+.section-1{
+    margin-bottom: 8%;
+}
+.inner{
+    overflow: hidden;
+}
+.inner img{
+    transition: all 1.5s ease-in;
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+.col3{
+    position: relative;
+}
+.count{
+    position: absolute;
+    top: 0;bottom: 0;right: 0;left: 0;
+    padding-top: 12vh;
+}
+.section-3{
+    margin-top: 6%;
+    background-color: aliceblue;
+}
+.section-3 i{
+    color: #0d790d;
+}
+.section-3 p{
+}
+.section-4{
+    margin-top: 8%;
+}
+.section-4 .row .column-md-7, .column-md-5{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.section-4 h2{
+    color: #000;
+    font-size: 50px;
+    text-decoration: none;
+}
+.section-4 .para-1{
+    font-family: roboto;
+    margin-top: 7%;
+    font-size: 25px;
+}
+.img-btn{
+    width: 200px;
+    cursor: pointer;
+}
+.container .pt-2{
+    text-align: center;
+}
+.section-2{
+    background-color: azure;
+}
+.bft{
+    margin-bottom: 2%;
+}
+.line {
+    display: table;
+    margin: 10px auto;
+    border-bottom: 5px solid #eddb00;
+    position: relative;
+    padding: 15px 20px;
+    
+    text-transform: uppercase;
+  }
+  
+  .line::before {
+    position: absolute;
+    font-family: "Glyphicons Halflings";
+    content: "\e006";
+    width: 28px;
+    left: 0;
+    right: 0;
+    bottom: -18px;
+    margin: auto;
+    font-size: 20px;
+    color: rgb(28, 136, 7);
+    padding: 5px;
+  }
+  .connect{
+      background-color: white;
+  }
+  .connect2{
+      padding-top: 30px;
+  }
+  .social{
+      padding-left: 0%;
+  }
+  .social li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 10px 0 0;
+  }
+  .social li a{
+      height: 50px;
+      width: 50px;
+      color: #fcb216;
+      display: inline-block;
+      float: center;
+      background: rgb(5, 5, 4);
+      border-radius: 50%;
+      position: relative;
+  }
+  .social li a span{
+      display: inline-block;
+      position: absolute;
+      font-size: 26px;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateY(-50%, -50);
+      -ms-transform: translateY(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  .social li a:hover{
+      color: #fff;
+  }
+  footer{
+      background-color: #000;
+      color: #d5d5d5;
+      padding-top: 2rem;
+  }
+  hr.light{
+      border-top: 1px solid #d5d5d5;
+      width: 50%;
+      margin-top: .8rem;
+      margin-bottom: 1rem;
+  }
+  hr.light-100{
+    border-top: 1px solid #d5d5d5;
+    margin-top: .8rem;
+    margin-bottom: 1rem;
+}
+.backtop{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #caa426;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: rgb(7, 136, 18);
+    font-size: 22px;
+}
+
+
+
+
+
+.circle-icon {
+    background: #079247;
+    padding:30px;
+    border-radius: 50%;
+}
+ i{
+    color: #fcb216;
+}
+.icon-background {
+    color:#079247;
+}
+.btnc{
+    margin-left: 25%;
+}
+.footerlogo{
+    padding-top: 50px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-3 .row {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .site-content {
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .site-content {
+        background-image: url('../images/back1.jpg');
+        background-size: cover;
+        widows: 100%;
+    }
+}
+.flex-container{
+    height: 420px;
+    width: 1200px;
+    background: repeating-linear-gradient(120deg, white 0px, white 450px, 
+    hsl(123, 46%, 42%) 250px,
+    hsl(123, 24%, 49%));
+    border-left: white;
+    margin-left: 250px;
+}
