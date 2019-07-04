@@ -1,60 +1,98 @@
-.bubbles{
+
+
+
+
+
+/*lessons section css*/
+.lessons{
+  background: url(../images/money3.jpg) no-repeat top right #fff;
+  overflow: hidden;
+  background-size: contain;
+}
+.main_lessons{
+  
+}
+
+.lesson_title p{
+  font-size:2.375rem;
+  margin-top: 50%;
+  margin-bottom:50px;
+  color:#000;
+  font-family: 'latolight';
+  padding-top: 100px;
+}
+.lesson_content{}
+.lessonsborder{
+  position: relative;
+}
+.lessonsborder:before{
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
+  left: 15px;
+  top: 20px;
+  content: "";
+  background: #079247;
+  width: 2px;
+  height: 90%;
 }
-.bubbles li{
-  position: absolute;
-  list-style: none;
-  display: block;
-  background-color:#edbb00;
-  bottom: 100px;
-  animation: square 20s infinite;
-  transition-timing-function: linear;
+.lesson_content ul{
+margin:0;
+  padding:0;
+  list-style:none;
 }
-.bubbles li:nth-child(1){
-  width: 40px;
-  height: 40px;
-  left: 20%;
+.lesson_content ul li{
+  margin-bottom: 90px;
+  line-height: 30px;
 }
-.bubbles li:nth-child(2){
-  width: 60px;
-  height: 60px;
-  left: 40%;
-  animation-delay: 2s;
-  animation-duration: 17s;
-}
-.bubbles li:nth-child(3){
-  width: 10px;
-  height: 10px;
-  left: 60%;
-  animation-delay: 4s;
-  animation-duration: 13s;
-}
-.bubbles li:nth-child(4){
-  width: 80px;
-  height: 80px;
-  left: 80%;
-  animation-delay: 1s;
-  animation-duration: 22s;
-}
-.bubbles li:nth-child(5){
+.lesson_content ul li i{
+  font-size: 40px;
+  color: #fcb216;
+  background: #fff;
   width: 50px;
-  height: 50px;
-  left: 50%;
-  animation-delay: 7s;
-  animation-duration: 12s;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
 }
-@keyframes square{
-  0% {
-   -webkit-transform: translateY(0);
-   transform: translateY(0);
-  }
-  100% {
-    --webkit-transform: translateY(-800px) rotate(630deg);
-    transform: translateY(-800px) rotate(630deg);
-  }
+.lesson_content ul li a{
+  font-size: 1.125rem;
+  font-family: 'robotobold';
+  color: rgb(0, 0, 0, 0.59);
+  text-transform: uppercase;
+  padding-left: 10px;
+  max-width: 60%;
+  display: inline-block;
+}
+.lesson_content ul li a:hover{
+  text-decoration: none;
+}
+/* scroll back to top button*/
+#scroll {
+  position:fixed;
+  right:10px;
+  bottom:10px;
+  cursor:pointer;
+  width:50px;
+  height:50px;
+  background-color: #079247;
+  
+  text-indent:-9999px;
+  display:none;
+  -webkit-border-radius:60px;
+  -moz-border-radius:60px;
+  border-radius:60px
+}
+#scroll span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-8px;
+  margin-top:-12px;
+  height:0;
+  width:0;
+  border:8px solid transparent;
+  border-bottom-color:#ffffff;
+}
+#scroll:hover {
+  background-color: #fcb216;
+  opacity:1;filter:"alpha(opacity=100)";
+  -ms-filter:"alpha(opacity=100)";
 }

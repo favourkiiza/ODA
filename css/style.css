@@ -9,15 +9,7 @@ body{
     padding: 0;
     margin: 0;
 }
-nav{
-    
-}
-.navbar-brand{
-    font-family: 'Great Vibes';
-    font-size: 35px;
-    color: brown !important;
-}
-/*nav links*/
+/*nav */
 .navbar{
     background: #000;
 }
@@ -54,6 +46,10 @@ nav{
   }
 .active .nav-link{
     color: #eddb00 !important;
+    text-decoration: underline #079247;
+}
+.active .nav-link:hover{
+    text-decoration: none
 }
 
 .menu-right-btn{
@@ -72,6 +68,7 @@ nav{
     color: #fff;
     background-color: #eddb00;
 }
+/* landing page*/
 .site-content{
     background-image: url('../images/girlphone.jpg');
     background-size: cover;
@@ -81,17 +78,18 @@ nav{
     color: #fff;
     font-family: '';
     text-shadow: 1px 1px 15px #000;
+    text-transform: uppercase;
 }
 .site-title{
-    margin-top: 10%;
-    font-size: 60px;
+    margin-top: 15%;
+    font-size: 50px;
     margin-left: 20%;
     margin-right: 30%;
 }
 .site-btn1{
     margin-left: 50%;
     background-color:#fcb216;
-    color: #079247;
+    color: #fff;
     border-radius: 50px;
     border: 4px solid #fcb216;
     text-transform: uppercase;
@@ -117,6 +115,7 @@ nav{
     width: 60%;
     margin-left: 20%;
     margin-bottom: 5%;
+    color: rgb(0, 0, 0, 0.59)
 }
 
 .section-1{
@@ -139,6 +138,9 @@ nav{
     top: 0;bottom: 0;right: 0;left: 0;
     padding-top: 12vh;
 }
+.section-2 p{
+    color: rgb(0, 0, 0, 0.59);
+}
 .section-3{
     margin-top: 6%;
     background-color: aliceblue;
@@ -147,6 +149,7 @@ nav{
     color: #0d790d;
 }
 .section-3 p{
+    color: rgb(0, 0, 0, 0.59)
 }
 .section-4{
     margin-top: 8%;
@@ -164,6 +167,7 @@ nav{
     font-family: roboto;
     margin-top: 7%;
     font-size: 25px;
+    color: rgb(0, 0, 0, 0.59)
 }
 .img-btn{
     width: 200px;
@@ -306,12 +310,12 @@ nav{
         widows: 100%;
     }
 }
-.flex-container{
-    height: 420px;
-    width: 1200px;
-    background: repeating-linear-gradient(120deg, white 0px, white 450px, 
-    hsl(123, 46%, 42%) 250px,
-    hsl(123, 24%, 49%));
-    border-left: white;
-    margin-left: 250px;
+.ml{
+    margin-left: auto;
+}
+.copyright{
+    font-weight: 50;
+}
+.card p{
+    color: rgb(0, 0, 0, 0.59);
 }

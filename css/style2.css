@@ -173,70 +173,29 @@
 		width: 100%;
 	}
 }
-/**/
-@media (min-width: 768px) and (max-width: 991px) {
-    .flex-container {
-        width: 100%;
-    }
-    .img-div {
-        width: 100%;
-    }
+
+
+.img-center{
+	float: right;
+	margin-top: 10%;
+	padding-right: 230px;
+	margin-bottom: 10%;
+
 }
 
-/* Just for the absolutes within */
-.lskew {
-	position: relative;
-}
-
-/* Set an image as the right side, make it stand out by doing it smaller (5% top and bottom) */
-.lskew .skew-image {
-	position: absolute;
-	width: 50%;
-	right: 0;
-	top: 5%;
-	bottom: 5%;
-
-	background-image: url('../images/basic-jpeg.jpg');
-	background-size: cover;
-	background-position: right 33%; /* adjust for another picture */
-}
-
-/* Just for the absolute inside */
-.lskew .skew-wrapper {
-	position: relative;    
-}
-  
-/* OPTION */
-.lskew .skew-wrapper.min200 { min-height: 200px; }
-.lskew .skew-wrapper.min300 { min-height: 300px; }
-.lskew .skew-wrapper.min400 { min-height: 400px; }
-  
-/* The text background, skewed and adjusted to fit nicely */
-.lskew .skew-content-bg {
-	position: absolute;
-	height: 100%;
-	top: 0%;
-	left: -30px;
-	right: -20px;
-	-moz-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
-	-webkit-box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
-	box-shadow: rgba(0, 0, 0, 0.45) 5px 10px 20px 0;
-
+  .border-row{
+	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5); 
+  }
+  .border-col{
+	  border-left: 1px solid rgb(119,136,153);
+	  background-color: hsla(0, 12%, 94%, 0.637);
+  }
+  .border-colr{
+	border-right: 1px solid rgb(119,136,153);
 	background-color: #079247;
-	background-size: cover;
-	background-position: center left;
-	transform: skew(-6deg, 0deg);
-}
-/* Text content settings */
-.lskew .skew-content {
-	position: relative;
-	font-size: 1.4rem;
 	color: #fff;
-	padding: 30px 20px;
+	
 }
-@media (max-width: 768px) {
-	.lskew .skew-image {
-	 width: 100%;
-	}
-   }
-
+.card{
+	box-shadow: 0px 0px 7px 7px rgba(192, 189, 189, 0.5); 
+}
